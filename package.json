@@ -10,7 +10,7 @@
     "dev:css": "postcss styles/**/*.css --dir app/styles -w",
     "dev:remix": "remix run",
     "dev": "run-p dev:*",
-    "postinstall": "remix setup node",
+    "postinstall": "remix setup node && npm run build:css",
     "start": "remix-serve build"
   },
   "dependencies": {
